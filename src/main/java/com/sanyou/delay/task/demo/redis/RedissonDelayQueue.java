@@ -37,7 +37,7 @@ public class RedissonDelayQueue {
     private void initDelayQueue() {
         Config config = new Config();
         SingleServerConfig serverConfig = config.useSingleServer();
-        serverConfig.setAddress("redis://192.168.6.91:6379").setPassword("Uni-Ubi@2015PL");
+        serverConfig.setAddress("redis://192.168.200.144:6379");
         redissonClient = Redisson.create(config);
 
         blockingQueue = redissonClient.getBlockingQueue("SANYOU");

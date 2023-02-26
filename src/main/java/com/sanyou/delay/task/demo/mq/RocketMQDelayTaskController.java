@@ -27,11 +27,10 @@ import java.io.UnsupportedEncodingException;
 public class RocketMQDelayTaskController {
 
     @Resource
-    private RocketMQTemplate rocketMQTemplate;
+    private DefaultMQProducer producer;
 
     @GetMapping("/rocketmq/add")
     public void addTask(@RequestParam("task") String task) throws Exception {
-        DefaultMQProducer producer = rocketMQTemplate.getProducer();
         Message msg = new Message("sanyouDelayTaskTopic", "TagA", task.getBytes(RemotingHelper.DEFAULT_CHARSET));
         msg.setDelayTimeLevel(2);
         // 发送消息并得到消息的发送结果，然后打印
