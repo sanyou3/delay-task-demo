@@ -1,0 +1,14 @@
+spring:
+  redis:
+    host: 192.168.6.91
+    password: Uni-Ubi@2015PL
+
+  rabbitmq:
+    host: 192.168.58.144 # rabbitMQ的ip地址
+    port: 5672 # 端口
+    username: jie
+    password: 1234
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1
