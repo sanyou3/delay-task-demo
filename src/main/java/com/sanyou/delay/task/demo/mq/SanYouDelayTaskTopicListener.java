@@ -6,7 +6,7 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.stereotype.Component;
 
 /**
- * 监听rocketmq主题的消息
+ * 微信公众号：三友的java日记
  *
  * @author sanyou
  * @date 2022/8/14 19:29
