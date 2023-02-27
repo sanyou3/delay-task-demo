@@ -7,6 +7,6 @@ spring:
     port: 5672
     virtual-host: /
 rocketmq:
-  name-server: 192.168.200.144:9876
+  name-server: 192.168.200.144:9876 #服务器ip
   producer:
     group: sanyouProducer
